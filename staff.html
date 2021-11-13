@@ -11,12 +11,37 @@
 </head>
 <body>
   <header>
+    <h1>Straight to the Point</h1>
   </header>
   <nav>
     <a href="index.html">About</a>
     <a href="staff.html">Staff</a>
     <a href="bookings.html">Bookings</a>
   </nav>
+  <section class="signup-section" id="signup-section">
+    <h1>Register Today!</h1>
+    <p>After submitting this quick form, one of our hard-working staff wil contact you as soon as possible using the information provided.</p>
+    <form class="signup-form" id="signup-form" name="signup-form">
+      <label for="customer-name" class="form-label form-required-label">Name</label>
+      <input type="text" id="customer-name" name="customer-name" class="form-text form-required-text">
+      <label for="customer-phone" class="form-label form-required-label">Phone</label>
+      <input type="text" id="customer-phone" name="customer-phone" class="form-text form-required-text">
+      <label for="customer-email" class="form-label">Email</label>
+      <input type="text" id="customer-email" name="customer-email" class="form-text">
+      <label for="customer-address" class="form-label">Address</label>
+      <input type="text" id="customer-address" name="customer-address" class="form-text">
+      <label for="programs" class="form-label form-required-label">Program:</label>
+      <select name="programs" id="programs-list" class="form-select form-required-select">
+        <option value="a101">A101 - Beginner Class</option>
+        <option value="a102">A102 - Intermediate Class</option>
+        <option value="a103">A103 - Advanced Class</option>
+        <option value="p1">Private Tutoring - 1 Lesson</option>
+        <option value="p3">Private Tutoring - 3 Lessons</option>
+        <option value="p10">Private Tutoring - 10 Lessons</option>
+      </select>
+      <input type="submit" value="Send Registration Request" id="signup-submit" name="signup-submit">
+    </form>
+  </section>
   <main>
     <section class="top-section">
       <h1>Meet Our Staff</h1>
@@ -24,29 +49,6 @@
         <p>Straight to the Point Archery has instructors that are qualified level 1 and level 2 instructors and have met the safety requirements of the USA Archery (USAA). We teach in a positive learning environment.  Our instructors also have extensive knowledge of the most advanced archery equipment and all forms of archery from the traditional long bow to the modern compound.  Straight to the Point Archery also has specific instructors for recreational archery, competitive archery and bow hunting.</p>
         <p>Straight to the Point Archery’s staff has decades of experience in the archery industry. We are committed to educating you with any questions that you may have.</p>
       </article>
-    </section>
-    <section class="signup-section" id="signup-section">
-      <h1>Register Today!</h1>
-      <form class="signup-form" id="signup-form" name="signup-form">
-        <label for="customer-name" class="form-label form-required-label">Name</label>
-        <input type="text" id="customer-name" name="customer-name" class="form-text form-required-text">
-        <label for="customer-phone" class="form-label form-required-label">Phone</label>
-        <input type="text" id="customer-phone" name="customer-phone" class="form-text form-required-text">
-        <label for="customer-email" class="form-label">Email</label>
-        <input type="text" id="customer-email" name="customer-email" class="form-text">
-        <label for="customer-address" class="form-label">Address</label>
-        <input type="text" id="customer-address" name="customer-address" class="form-text">
-        <label for="programs" class="form-label form-required-label">Program:</label>
-        <select name="programs" id="programs-list" class="form-select form-required-select">
-          <option value="a101">A101 - Beginner Class</option>
-          <option value="a102">A102 - Intermediate Class</option>
-          <option value="a103">A103 - Advanced Class</option>
-          <option value="p1">Private Tutoring - 1 Lesson</option>
-          <option value="p3">Private Tutoring - 3 Lessons</option>
-          <option value="p10">Private Tutoring - 10 Lessons</option>
-        </select>
-        <input type="submit" value="Register" id="signup-submit" name="signup-submit">
-      </form>
     </section>
     <section class="card-section" id="staff-card-section">
       <h1>Roster</h1>

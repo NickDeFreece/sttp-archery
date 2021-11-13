@@ -11,41 +11,43 @@
 </head>
 <body>
   <header>
+    <h1>Straight to the Point</h1>
   </header>
   <nav>
     <a href="index.html">About</a>
     <a href="staff.html">Staff</a>
     <a href="bookings.html">Bookings</a>
   </nav>
+  <section class="signup-section" id="signup-section">
+    <h1>Register Today!</h1>
+    <p>After submitting this quick form, one of our hard-working staff wil contact you as soon as possible using the information provided.</p>
+    <form class="signup-form" id="signup-form" name="signup-form">
+      <label for="customer-name" class="form-label form-required-label">Name</label>
+      <input type="text" id="customer-name" name="customer-name" class="form-text form-required-text">
+      <label for="customer-phone" class="form-label form-required-label">Phone</label>
+      <input type="text" id="customer-phone" name="customer-phone" class="form-text form-required-text">
+      <label for="customer-email" class="form-label">Email</label>
+      <input type="text" id="customer-email" name="customer-email" class="form-text">
+      <label for="customer-address" class="form-label">Address</label>
+      <input type="text" id="customer-address" name="customer-address" class="form-text">
+      <label for="programs" class="form-label form-required-label">Program:</label>
+      <select name="programs" id="programs-list" class="form-select form-required-select">
+        <option value="a101">A101 - Beginner Class</option>
+        <option value="a102">A102 - Intermediate Class</option>
+        <option value="a103">A103 - Advanced Class</option>
+        <option value="p1">Private Tutoring - 1 Lesson</option>
+        <option value="p3">Private Tutoring - 3 Lessons</option>
+        <option value="p10">Private Tutoring - 10 Lessons</option>
+      </select>
+      <input type="submit" value="Send Registration Request" id="signup-submit" name="signup-submit">
+    </form>
+  </section>
   <main>
     <section class="top-section">
       <h1>Welcome</h1>
       <article class="top-article">
-        <p>Straight to the Point Archery is a non profit archery education center and training facility founded in 2005 by Giap Nguyen.  Our state of the art facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.  We house 28 shooting lanes - 14 each of 10 yards and 20 yards - and 2 private coaching rooms. We also have access to 26 additional 20 yard lanes and an outdoor shooting field.</p>
+        <p>Straight to the Point Archery is a non profit archery education center and training facility founded in 2005 by former olympian Giap Nguyen.  Our state of the art facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.  We house 28 shooting lanes - 14 each of 10 yards and 20 yards - and 2 private coaching rooms. We also have access to 26 additional 20 yard lanes and an outdoor shooting field.</p>
       </article>
-    </section>
-    <section class="signup-section" id="signup-section">
-      <h1>Register Today!</h1>
-      <form class="signup-form" id="signup-form" name="signup-form">
-        <label for="customer-name" class="form-label form-required-label">Name</label>
-        <input type="text" id="customer-name" name="customer-name" class="form-text form-required-text">
-        <label for="customer-phone" class="form-label form-required-label">Phone</label>
-        <input type="text" id="customer-phone" name="customer-phone" class="form-text form-required-text">
-        <label for="customer-email" class="form-label">Email</label>
-        <input type="text" id="customer-email" name="customer-email" class="form-text">
-        <label for="customer-address" class="form-label">Address</label>
-        <input type="text" id="customer-address" name="customer-address" class="form-text">
-        <label for="programs" class="form-label form-required-label">Program:</label>
-        <select name="programs" id="programs-list" class="form-select form-required-select">
-          <option value="a101">A101 - Beginner Class</option>
-          <option value="a102">A102 - Intermediate Class</option>
-          <option value="a103">A103 - Advanced Class</option>
-          <option value="p1">Private Tutoring - 1 Lesson</option>
-          <option value="p3">Private Tutoring - 3 Lessons</option>
-          <option value="p10">Private Tutoring - 10 Lessons</option>
-        </select>
-        <input type="submit" value="Register" id="signup-submit" name="signup-submit">
-      </form>
     </section>
     <section class="card-section">
       <h1>Classes</h1>
@@ -59,7 +61,7 @@
         </div>
         <div class="card-middle">
           <p>A101 is a basic archery course that focuses on beginning archery safety, skills, and drills. Participants learn about archery form, range rules and etiquette. Form training and fun games are introduced in this class.</p>
-          <p class="prereqs">Prerequisites: Minimum age  8 years old or 7 w/ pre-evaluation.</p>
+          <p class="prereqs">Prerequisites: Minimum age 8 years old or 7 w/ pre-evaluation.</p>
         </div>
         <div class="card-bottom">
           <p class="price">$120 / Month</p>
