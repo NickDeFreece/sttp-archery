@@ -22,7 +22,11 @@ a, p {
   font-family: "arial";
 }
 
-.top-box {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "arial"
+}
+
+.header-top-box {
   max-width: 80rem;
   display: flex;
   flex-flow: row-reverse wrap;
@@ -80,7 +84,7 @@ a, p {
   border-radius: 50%;
   z-index: 2;
   position: relative;
-  right: 3rem;
+  right: 2.93rem;
 }
 
 .bullseye {
@@ -100,12 +104,41 @@ a, p {
 .middle-ring a {
   position: relative;
   bottom: 3.5rem;
+  right: .13rem;
 }
 
 .bullseye a {
 
 }
 
+.nav-card {
+  margin-bottom: -2rem;
+  background-image: "imagaes/nav-card-bg.png"
+  border: 5px ridge #ecb722;
+  transition: margin-bottom 1s ease-in-out;
+}
+
+.nav-card:hover {
+  margin-bottom: 0rem;
+}
+
+.address-bar a {
+  text-decoration-line: none;
+  font-style: normal;
+}
+/*
+.address-bar a::before {
+  content: " * ";
+  text-decoration-line: none;
+}
+
+.address-bar a:first-of-type::before {
+  content: "";
+}
+*/
+.fa-bullseye {
+  color: #ecb722;
+}
 .top-section {
 
 }
