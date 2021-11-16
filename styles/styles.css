@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-card {
   margin-bottom: -2rem;
-  background-image: "imagaes/nav-card-bg.png"
+  background-image: "imagaes/nav-card-bg.png";
   border: 5px ridge #ecb722;
   transition: margin-bottom 1s ease-in-out;
 }
@@ -245,4 +245,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .signup-button {
 
+}
+
+.actiities-list article .activity-card:nth-of-type(odd) {
+  float: left;
+}
+
+.actiities-list article .activity-card:nth-of-type(even) {
+  float: right;
 }
