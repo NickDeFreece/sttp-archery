@@ -174,9 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .class-list {
   display: grid;
-  grid: [row1-start] "card1 card2" 43em [row1-end]
-        [row2-start] "card3 card4" 43em [row2-end]
-        / 33em 33em;
+  grid: [row1-start] "card1 card2" minmax(42em, 1fr) [row1-end]
+        [row2-start] "card3 card4" minmax(42em, 1fr) [row2-end]
+        / minmax(33em, 1fr) minmax(33em, 1fr);
   grid-gap: 2rem 3rem;
 }
 
