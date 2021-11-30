@@ -31,7 +31,7 @@ address {
 }
 
 main {
-  max-width: 100%;
+  max-width: 90rem;
   background-color: white;
   box-shadow: -5px 10px #000000;
   padding-bottom: 2rem;
@@ -43,7 +43,7 @@ section {
   align-items: center;
 }
 
-a, p {
+a, p, h2 {
   font-family: "arial";
   text-align: center;
 }
@@ -172,12 +172,15 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.classes {
+  align-items: normal;
+}
+
 .class-list {
   display: grid;
-  grid: [row1-start] "card1 card2" minmax(42em, 1fr) [row1-end]
-        [row2-start] "card3 card4" minmax(42em, 1fr) [row2-end]
-        / minmax(33em, 1fr) minmax(33em, 1fr);
-  grid-gap: 2rem 3rem;
+  grid-template-columns: repeat(auto-fill, 30em);
+  grid-gap: 2rem;
+  justify-content: center;
 }
 
 .card-section {
@@ -203,15 +206,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .class-card {
   display: grid;
-  grid: "level . . time time" 1.25em
+  grid: "level level . time time" 1.25em
         "name name name name name" 4em
         "days days days days days" 2.5em
-        ". . . . ." 15em
-        "desc desc desc desc desc" 15em
-        "price price . . signup" 4em
-        / minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr);
+        ". . . . ." 10em
+        "desc desc desc desc desc" 14em
+        "price price price signup signup" 4em
+        / 1fr 1fr 1fr 1fr 1fr;
   background-image: url('../images/cardbg-whitelogo.png');
-  background-size: cover;
+  background-size: contain;
+  background-origin: content-box;
+  background-position: center;
 }
 
 .class-card * {
@@ -300,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  font-size: larger;
+  font-size: 1fr;
 }
 
 .class-card-top {
