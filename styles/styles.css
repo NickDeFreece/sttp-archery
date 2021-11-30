@@ -174,9 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .class-list {
   display: grid;
-  grid: [row1-start] "card1 card2" 43rem [row1-end]
-        [row2-start] "card3 card4" 43rem [row2-end]
-        / 33rem 33rem;
+  grid: [row1-start] "card1 card2" 43em [row1-end]
+        [row2-start] "card3 card4" 43em [row2-end]
+        / 33em 33em;
   grid-gap: 2rem 3rem;
 }
 
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
         ". . . . ." 15em
         "desc desc desc desc desc" 15em
         "price price . . signup" 4em
-        / minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+        / minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr) minmax(5em, 1fr);
   background-image: url('../images/cardbg-whitelogo.png');
   background-size: cover;
 }
@@ -293,8 +293,8 @@ h1, h2, h3, h4, h5, h6 {
 .description-text {
   background-image: url();
   background-color: lightgray;
-  margin: 0px .5rem 0px;
-  padding: 0px .5rem 0px;
+  margin: 0px .5em 0px;
+  padding: 0px .5em 0px;
   border-radius: 10px;
   height: 100%;
   display: flex;
